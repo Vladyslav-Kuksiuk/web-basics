@@ -1,0 +1,18 @@
+#messages {
+    height: 50vh;
+    overflow: hidden;
+}
+.list-group-item {
+    border: 0;
+    border-radius: 0 !important;
+}
+.list-group-item:nth-child(2n) {
+    background-color: rgba(13, 14, 19, 0.1);
+}
+.list-group-item:nth-child(2n+1) {
+    background-color: rgba(13, 14, 19, 0.15);
+}
+.card-body {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+}
