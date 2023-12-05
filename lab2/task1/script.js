@@ -14,11 +14,11 @@ function submitForm() {
 
   let correct = true;
 
-  correct = correct && validateRow(fullname, fullnameRegex)
-  correct = correct && validateRow(variant, variantRegex)
-  correct = correct && validateRow(group, groupRegex)
-  correct = correct && validateRow(phone, phoneNumberRegex)
-  correct = correct && validateRow(idCard, idCardRegex)
+  correct = validateRow(fullname, fullnameRegex) && correct
+  correct = validateRow(variant, variantRegex) && correct
+  correct = validateRow(group, groupRegex) && correct
+  correct = validateRow(phone, phoneNumberRegex) && correct
+  correct = validateRow(idCard, idCardRegex) && correct
 
   if (correct) {
     let showData = document.getElementById("show-data-div");
